@@ -213,464 +213,1386 @@ class Country {
         return null;
     }
 
-    /**
-     * Returns image res based on country name code
-     *
-     * @param country
-     * @return
-     */
-    static int getFlagResID(Country country) {
-        switch (country.getNameCode()) {
-            case "afg": //afghanistan
-                return R.drawable.flag_afghanistan;
-            case "alb": //albania
-                return R.drawable.flag_albania;
-            case "dza": //algeria
-                return R.drawable.flag_algeria;
-            case "and": //andorra
-                return R.drawable.flag_andorra;
-            case "ago": //angola
-                return R.drawable.flag_angola;
-            case "ata": //antarctica // custom
-                return R.drawable.flag_antarctica;
-            case "arg": //argentina
-                return R.drawable.flag_argentina;
-            case "arm": //armenia
-                return R.drawable.flag_armenia;
-            case "abw": //aruba
-                return R.drawable.flag_aruba;
-            case "aus": //australia
-                return R.drawable.flag_australia;
-            case "aut": //austria
-                return R.drawable.flag_austria;
-            case "aze": //azerbaijan
-                return R.drawable.flag_azerbaijan;
-            case "bhr": //bahrain
-                return R.drawable.flag_bahrain;
-            case "bgd": //bangladesh
-                return R.drawable.flag_bangladesh;
-            case "blr": //belarus
-                return R.drawable.flag_belarus;
-            case "bel": //belgium
-                return R.drawable.flag_belgium;
-            case "blz": //belize
-                return R.drawable.flag_belize;
-            case "ben": //benin
-                return R.drawable.flag_benin;
-            case "btn": //bhutan
-                return R.drawable.flag_bhutan;
-            case "bol": //bolivia, plurinational state of
-                return R.drawable.flag_bolivia;
-            case "bih": //bosnia and herzegovina
-                return R.drawable.flag_bosnia;
-            case "bwa": //botswana
-                return R.drawable.flag_botswana;
-            case "bra": //brazil
-                return R.drawable.flag_brazil;
-            case "brn": //brunei darussalam // custom
-                return R.drawable.flag_brunei;
-            case "bgr": //bulgaria
-                return R.drawable.flag_bulgaria;
-            case "bfa": //burkina faso
-                return R.drawable.flag_burkina_faso;
-            case "mmr": //myanmar
-                return R.drawable.flag_myanmar;
-            case "bdi": //burundi
-                return R.drawable.flag_burundi;
-            case "khm": //cambodia
-                return R.drawable.flag_cambodia;
-            case "cmr": //cameroon
-                return R.drawable.flag_cameroon;
-            case "can": //canada
-                return R.drawable.flag_canada;
-            case "cpv": //cape verde
-                return R.drawable.flag_cape_verde;
-            case "caf": //central african republic
-                return R.drawable.flag_central_african_republic;
-            case "tcd": //chad
-                return R.drawable.flag_chad;
-            case "chl": //chile
-                return R.drawable.flag_chile;
-            case "chn": //china
-                return R.drawable.flag_china;
-            case "cxr": //christmas island
-                return R.drawable.flag_christmas_island;
-            case "cck": //cocos (keeling) islands
-                return R.drawable.flag_cocos;// custom
-            case "col": //colombia
-                return R.drawable.flag_colombia;
-            case "com": //comoros
-                return R.drawable.flag_comoros;
-            case "cog": //congo
-                return R.drawable.flag_republic_of_the_congo;
-            case "cod": //congo, the democratic republic of the
-                return R.drawable.flag_democratic_republic_of_the_congo;
-            case "cok": //cook islands
-                return R.drawable.flag_cook_islands;
-            case "cri": //costa rica
-                return R.drawable.flag_costa_rica;
-            case "hrv": //croatia
-                return R.drawable.flag_croatia;
-            case "cub": //cuba
-                return R.drawable.flag_cuba;
-            case "cyp": //cyprus
-                return R.drawable.flag_cyprus;
-            case "cze": //czech republic
-                return R.drawable.flag_czech_republic;
-            case "dnk": //denmark
-                return R.drawable.flag_denmark;
-            case "dji": //djibouti
-                return R.drawable.flag_djibouti;
-            case "tls": //timor-leste
-                return R.drawable.flag_timor_leste;
-            case "ecu": //ecuador
-                return R.drawable.flag_ecuador;
-            case "egy": //egypt
-                return R.drawable.flag_egypt;
-            case "slv": //el salvador
-                return R.drawable.flag_el_salvador;
-            case "gnq": //equatorial guinea
-                return R.drawable.flag_equatorial_guinea;
-            case "eri": //eritrea
-                return R.drawable.flag_eritrea;
-            case "est": //estonia
-                return R.drawable.flag_estonia;
-            case "eth": //ethiopia
-                return R.drawable.flag_ethiopia;
-            case "flk": //falkland islands (malvinas)
-                return R.drawable.flag_falkland_islands;
-            case "fro": //faroe islands
-                return R.drawable.flag_faroe_islands;
-            case "fji": //fiji
-                return R.drawable.flag_fiji;
-            case "fin": //finland
-                return R.drawable.flag_finland;
-            case "fra": //france
-                return R.drawable.flag_france;
-            case "pyf": //french polynesia
-                return R.drawable.flag_french_polynesia;
-            case "gab": //gabon
-                return R.drawable.flag_gabon;
-            case "gmb": //gambia
-                return R.drawable.flag_gambia;
-            case "geo": //georgia
-                return R.drawable.flag_georgia;
-            case "deu": //germany
-                return R.drawable.flag_germany;
-            case "gha": //ghana
-                return R.drawable.flag_ghana;
-            case "gib": //gibraltar
-                return R.drawable.flag_gibraltar;
-            case "grc": //greece
-                return R.drawable.flag_greece;
-            case "grl": //greenland
-                return R.drawable.flag_greenland;
-            case "gtm": //guatemala
-                return R.drawable.flag_guatemala;
-            case "gin": //guinea
-                return R.drawable.flag_guinea;
-            case "gnb": //guinea-bissau
-                return R.drawable.flag_guinea_bissau;
-            case "guy": //guyana
-                return R.drawable.flag_guyana;
-            case "hti": //haiti
-                return R.drawable.flag_haiti;
-            case "hnd": //honduras
-                return R.drawable.flag_honduras;
-            case "hkg": //hong kong
-                return R.drawable.flag_hong_kong;
-            case "hun": //hungary
-                return R.drawable.flag_hungary;
-            case "ind": //india
-                return R.drawable.flag_india;
-            case "idn": //indonesia
-                return R.drawable.flag_indonesia;
-            case "irn": //iran, islamic republic of
-                return R.drawable.flag_iran;
-            case "irq": //iraq
-                return R.drawable.flag_iraq;
-            case "irl": //ireland
-                return R.drawable.flag_ireland;
-            case "imn": //isle of man
-                return R.drawable.flag_isleof_man; // custom
-            case "isr": //israel
-                return R.drawable.flag_israel;
-            case "ita": //italy
-                return R.drawable.flag_italy;
-            case "civ": //côte d\'ivoire
-                return R.drawable.flag_cote_divoire;
-            case "jpn": //japan
-                return R.drawable.flag_japan;
-            case "jor": //jordan
-                return R.drawable.flag_jordan;
-            case "kaz": //kazakhstan
-                return R.drawable.flag_kazakhstan;
-            case "ken": //kenya
-                return R.drawable.flag_kenya;
-            case "kir": //kiribati
-                return R.drawable.flag_kiribati;
-            case "kwt": //kuwait
-                return R.drawable.flag_kuwait;
-            case "kgz": //kyrgyzstan
-                return R.drawable.flag_kyrgyzstan;
-            case "lao": //lao people\'s democratic republic
-                return R.drawable.flag_laos;
-            case "lva": //latvia
-                return R.drawable.flag_latvia;
-            case "lbn": //lebanon
-                return R.drawable.flag_lebanon;
-            case "lso": //lesotho
-                return R.drawable.flag_lesotho;
-            case "lbr": //liberia
-                return R.drawable.flag_liberia;
-            case "lby": //libya
-                return R.drawable.flag_libya;
-            case "lie": //liechtenstein
-                return R.drawable.flag_liechtenstein;
-            case "ltu": //lithuania
-                return R.drawable.flag_lithuania;
-            case "lux": //luxembourg
-                return R.drawable.flag_luxembourg;
-            case "mac": //macao
-                return R.drawable.flag_macao;
-            case "mkd": //macedonia, the former yugoslav republic of
-                return R.drawable.flag_macedonia;
-            case "mdg": //madagascar
-                return R.drawable.flag_madagascar;
-            case "mwi": //malawi
-                return R.drawable.flag_malawi;
-            case "mys": //malaysia
-                return R.drawable.flag_malaysia;
-            case "mdv": //maldives
-                return R.drawable.flag_maldives;
-            case "mli": //mali
-                return R.drawable.flag_mali;
-            case "mlt": //malta
-                return R.drawable.flag_malta;
-            case "mhl": //marshall islands
-                return R.drawable.flag_marshall_islands;
-            case "mrt": //mauritania
-                return R.drawable.flag_mauritania;
-            case "mus": //mauritius
-                return R.drawable.flag_mauritius;
-            case "myt": //mayotte
-                return R.drawable.flag_martinique; // no exact flag found
-            case "mex": //mexico
-                return R.drawable.flag_mexico;
-            case "fsm": //micronesia, federated states of
-                return R.drawable.flag_micronesia;
-            case "mda": //moldova, republic of
-                return R.drawable.flag_moldova;
-            case "mco": //monaco
-                return R.drawable.flag_monaco;
-            case "mng": //mongolia
-                return R.drawable.flag_mongolia;
-            case "mne": //montenegro
-                return R.drawable.flag_of_montenegro;// custom
-            case "mar": //morocco
-                return R.drawable.flag_morocco;
-            case "moz": //mozambique
-                return R.drawable.flag_mozambique;
-            case "nam": //namibia
-                return R.drawable.flag_namibia;
-            case "nru": //nauru
-                return R.drawable.flag_nauru;
-            case "npl": //nepal
-                return R.drawable.flag_nepal;
-            case "nld": //netherlands
-                return R.drawable.flag_netherlands;
-            case "ncl": //new caledonia
-                return R.drawable.flag_new_caledonia;// custom
-            case "nzl": //new zealand
-                return R.drawable.flag_new_zealand;
-            case "nic": //nicaragua
-                return R.drawable.flag_nicaragua;
-            case "ner": //niger
-                return R.drawable.flag_niger;
-            case "nga": //nigeria
-                return R.drawable.flag_nigeria;
-            case "niu": //niue
-                return R.drawable.flag_niue;
-            case "kp": //north korea
-                return R.drawable.flag_north_korea;
-            case "nor": //norway
-                return R.drawable.flag_norway;
-            case "omn": //oman
-                return R.drawable.flag_oman;
-            case "pak": //pakistan
-                return R.drawable.flag_pakistan;
-            case "plw": //palau
-                return R.drawable.flag_palau;
-            case "pan": //panama
-                return R.drawable.flag_panama;
-            case "png": //papua new guinea
-                return R.drawable.flag_papua_new_guinea;
-            case "pry": //paraguay
-                return R.drawable.flag_paraguay;
-            case "per": //peru
-                return R.drawable.flag_peru;
-            case "phl": //philippines
-                return R.drawable.flag_philippines;
-            case "pcn": //pitcairn
-                return R.drawable.flag_pitcairn_islands;
-            case "pol": //poland
-                return R.drawable.flag_poland;
-            case "prt": //portugal
-                return R.drawable.flag_portugal;
-            case "pri": //puerto rico
-                return R.drawable.flag_puerto_rico;
-            case "qat": //qatar
-                return R.drawable.flag_qatar;
-            case "rou": //romania
-                return R.drawable.flag_romania;
-            case "rus": //russian federation
-                return R.drawable.flag_russian_federation;
-            case "rwa": //rwanda
-                return R.drawable.flag_rwanda;
-            case "blm": //saint barthélemy
-                return R.drawable.flag_saint_barthelemy;// custom
-            case "wsm": //samoa
-                return R.drawable.flag_samoa;
-            case "smr": //san marino
-                return R.drawable.flag_san_marino;
-            case "stp": //sao tome and principe
-                return R.drawable.flag_sao_tome_and_principe;
-            case "sau": //saudi arabia
-                return R.drawable.flag_saudi_arabia;
-            case "sen": //senegal
-                return R.drawable.flag_senegal;
-            case "srb": //serbia
-                return R.drawable.flag_serbia; // custom
-            case "syc": //seychelles
-                return R.drawable.flag_seychelles;
-            case "sle": //sierra leone
-                return R.drawable.flag_sierra_leone;
-            case "sgp": //singapore
-                return R.drawable.flag_singapore;
-            case "svk": //slovakia
-                return R.drawable.flag_slovakia;
-            case "svn": //slovenia
-                return R.drawable.flag_slovenia;
-            case "slb": //solomon islands
-                return R.drawable.flag_soloman_islands;
-            case "som": //somalia
-                return R.drawable.flag_somalia;
-            case "zaf": //south africa
-                return R.drawable.flag_south_africa;
-            case "kor": //south korea
-                return R.drawable.flag_south_korea;
-            case "esp": //spain
-                return R.drawable.flag_spain;
-            case "lka": //sri lanka
-                return R.drawable.flag_sri_lanka;
-            case "shn": //saint helena, ascension and tristan da cunha
-                return R.drawable.flag_saint_helena; // custom
-            case "spm": //saint pierre and miquelon
-                return R.drawable.flag_saint_pierre;
-            case "sdn": //sudan
-                return R.drawable.flag_sudan;
-            case "sur": //suriname
-                return R.drawable.flag_suriname;
-            case "swz": //swaziland
-                return R.drawable.flag_swaziland;
-            case "swe": //sweden
-                return R.drawable.flag_sweden;
-            case "che": //switzerland
-                return R.drawable.flag_switzerland;
-            case "syr": //syrian arab republic
-                return R.drawable.flag_syria;
-            case "twn": //taiwan, province of china
-                return R.drawable.flag_taiwan;
-            case "tjk": //tajikistan
-                return R.drawable.flag_tajikistan;
-            case "tza": //tanzania, united republic of
-                return R.drawable.flag_tanzania;
-            case "tha": //thailand
-                return R.drawable.flag_thailand;
-            case "tgo": //togo
-                return R.drawable.flag_togo;
-            case "tkl": //tokelau
-                return R.drawable.flag_tokelau; // custom
-            case "ton": //tonga
-                return R.drawable.flag_tonga;
-            case "tun": //tunisia
-                return R.drawable.flag_tunisia;
-            case "tur": //turkey
-                return R.drawable.flag_turkey;
-            case "tkm": //turkmenistan
-                return R.drawable.flag_turkmenistan;
-            case "tuv": //tuvalu
-                return R.drawable.flag_tuvalu;
-            case "are": //united arab emirates
-                return R.drawable.flag_uae;
-            case "uga": //uganda
-                return R.drawable.flag_uganda;
-            case "gbr": //united kingdom
-                return R.drawable.flag_united_kingdom;
-            case "ukr": //ukraine
-                return R.drawable.flag_ukraine;
-            case "ury": //uruguay
-                return R.drawable.flag_uruguay;
-            case "usa": //united states
-                return R.drawable.flag_united_states_of_america;
-            case "uzb": //uzbekistan
-                return R.drawable.flag_uzbekistan;
-            case "vut": //vanuatu
-                return R.drawable.flag_vanuatu;
-            case "vat": //holy see (vatican city state)
-                return R.drawable.flag_vatican_city;
-            case "ven": //venezuela, bolivarian republic of
-                return R.drawable.flag_venezuela;
-            case "vnm": //vietnam
-                return R.drawable.flag_vietnam;
-            case "wlf": //wallis and futuna
-                return R.drawable.flag_wallis_and_futuna;
-            case "yem": //yemen
-                return R.drawable.flag_yemen;
-            case "zmb": //zambia
-                return R.drawable.flag_zambia;
-            case "zwe": //zimbabwe
-                return R.drawable.flag_zimbabwe;
+	/**
+	 * Returns the two letter country for the three letter country code
+	 *
+	 * @param threeLetterCode
+	 * @return
+	 */
+	static String getTwoLetterCode(String threeLetterCode) {
+		switch (threeLetterCode) {
+			case "ita":
+				return "it";
+			case "stp":
+				return "st";
+			case "gnq":
+				return "gq";
+			case "pan":
+				return "pa";
+			case "imn":
+				return "im";
+			case "svn":
+				return "si";
+			case "uzb":
+				return "uz";
+			case "fsm":
+				return "fm";
+			case "tto":
+				return "tt";
+			case "tca":
+				return "tc";
+			case "fro":
+				return "fo";
+			case "aia":
+				return "ai";
+			case "lby":
+				return "ly";
+			case "tun":
+				return "tn";
+			case "grl":
+				return "gl";
+			case "rus":
+				return "ru";
+			case "afg":
+				return "af";
+			case "mhl":
+				return "mh";
+			case "esp":
+				return "es";
+			case "nld":
+				return "nl";
+			case "cym":
+				return "ky";
+			case "sur":
+				return "sr";
+			case "sxm":
+				return "sx";
+			case "pcn":
+				return "pn";
+			case "kir":
+				return "ki";
+			case "bgd":
+				return "bd";
+			case "bdi":
+				return "bi";
+			case "mne":
+				return "me";
+			case "tcd":
+				return "td";
+			case "hti":
+				return "ht";
+			case "mdv":
+				return "mv";
+			case "mli":
+				return "ml";
+			case "ner":
+				return "ne";
+			case "twn":
+				return "tw";
+			case "est":
+				return "ee";
+			case "gab":
+				return "ga";
+			case "gtm":
+				return "gt";
+			case "tur":
+				return "tr";
+			case "cyp":
+				return "cy";
+			case "wsm":
+				return "ws";
+			case "cxr":
+				return "cx";
+			case "mng":
+				return "mn";
+			case "can":
+				return "ca";
+			case "cck":
+				return "cc";
+			case "irl":
+				return "ie";
+			case "alb":
+				return "al";
+			case "kgz":
+				return "kg";
+			case "jpn":
+				return "jp";
+			case "bel":
+				return "be";
+			case "mex":
+				return "mx";
+			case "qat":
+				return "qa";
+			case "irn":
+				return "ir";
+			case "che":
+				return "ch";
+			case "phl":
+				return "ph";
+			case "tha":
+				return "th";
+			case "tuv":
+				return "tv";
+			case "syr":
+				return "sy";
+			case "ben":
+				return "bj";
+			case "jor":
+				return "jo";
+			case "per":
+				return "pe";
+			case "lva":
+				return "lv";
+			case "uga":
+				return "ug";
+			case "bih":
+				return "ba";
+			case "ury":
+				return "uy";
+			case "hun":
+				return "hu";
+			case "abw":
+				return "aw";
+			case "irq":
+				return "iq";
+			case "ago":
+				return "ao";
+			case "and":
+				return "ad";
+			case "zwe":
+				return "zw";
+			case "sdn":
+				return "sd";
+			case "kor":
+				return "kr";
+			case "vut":
+				return "vu";
+			case "hrv":
+				return "hr";
+			case "swz":
+				return "sz";
+			case "isr":
+				return "il";
+			case "png":
+				return "pg";
+			case "niu":
+				return "nu";
+			case "slb":
+				return "sb";
+			case "vgb":
+				return "vg";
+			case "sen":
+				return "sn";
+			case "sau":
+				return "sa";
+			case "mmr":
+				return "mm";
+			case "mlt":
+				return "mt";
+			case "chl":
+				return "cl";
+			case "dma":
+				return "dm";
+			case "gha":
+				return "gh";
+			case "omn":
+				return "om";
+			case "npl":
+				return "np";
+			case "bgr":
+				return "bg";
+			case "sle":
+				return "sl";
+			case "chn":
+				return "cn";
+			case "gib":
+				return "gi";
+			case "bra":
+				return "br";
+			case "dji":
+				return "dj";
+			case "guy":
+				return "gy";
+			case "bhr":
+				return "bh";
+			case "ata":
+				return "aq";
+			case "zaf":
+				return "za";
+			case "lso":
+				return "ls";
+			case "brb":
+				return "bb";
+			case "shn":
+				return "sh";
+			case "are":
+				return "ae";
+			case "sgp":
+				return "sg";
+			case "bhs":
+				return "bs";
+			case "cod":
+				return "cd";
+			case "blm":
+				return "bl";
+			case "pol":
+				return "pl";
+			case "nor":
+				return "no";
+			case "lca":
+				return "lc";
+			case "tgo":
+				return "tg";
+			case "arg":
+				return "ar";
+			case "ecu":
+				return "ec";
+			case "vat":
+				return "va";
+			case "cog":
+				return "cg";
+			case "deu":
+				return "de";
+			case "tjk":
+				return "tj";
+			case "gbr":
+				return "gb";
+			case "mac":
+				return "mo";
+			case "ven":
+				return "ve";
+			case "mwi":
+				return "mw";
+			case "pri":
+				return "pr";
+			case "srb":
+				return "rs";
+			case "fji":
+				return "fj";
+			case "jam":
+				return "jm";
+			case "bol":
+				return "bo";
+			case "geo":
+				return "ge";
+			case "prk":
+				return "kp";
+			case "atg":
+				return "ag";
+			case "gmb":
+				return "gm";
+			case "tkl":
+				return "tk";
+			case "msr":
+				return "ms";
+			case "mrt":
+				return "mr";
+			case "vct":
+				return "vc";
+			case "mda":
+				return "md";
+			case "blr":
+				return "by";
+			case "cok":
+				return "ck";
+			case "tkm":
+				return "tm";
+			case "moz":
+				return "mz";
+			case "gnb":
+				return "gw";
+			case "plw":
+				return "pw";
+			case "bwa":
+				return "bw";
+			case "ltu":
+				return "lt";
+			case "civ":
+				return "ci";
+			case "col":
+				return "co";
+			case "cub":
+				return "cu";
+			case "fin":
+				return "fi";
+			case "idn":
+				return "id";
+			case "arm":
+				return "am";
+			case "dnk":
+				return "dk";
+			case "kwt":
+				return "kw";
+			case "com":
+				return "km";
+			case "rwa":
+				return "rw";
+			case "nru":
+				return "nr";
+			case "wlf":
+				return "wf";
+			case "cri":
+				return "cr";
+			case "flk":
+				return "fk";
+			case "fra":
+				return "fr";
+			case "mus":
+				return "mu";
+			case "cmr":
+				return "cm";
+			case "hkg":
+				return "hk";
+			case "bmu":
+				return "bm";
+			case "som":
+				return "so";
+			case "gin":
+				return "gn";
+			case "usa":
+				return "us";
+			case "yem":
+				return "ye";
+			case "dom":
+				return "do";
+			case "pyf":
+				return "pf";
+			case "brn":
+				return "bn";
+			case "lux":
+				return "lu";
+			case "mdg":
+				return "mg";
+			case "lao":
+				return "la";
+			case "spm":
+				return "pm";
+			case "smr":
+				return "sm";
+			case "hnd":
+				return "hn";
+			case "egy":
+				return "eg";
+			case "lbn":
+				return "lb";
+			case "aze":
+				return "az";
+			case "vir":
+				return "vi";
+			case "nzl":
+				return "nz";
+			case "blz":
+				return "bz";
+			case "prt":
+				return "pt";
+			case "tls":
+				return "tl";
+			case "ton":
+				return "to";
+			case "ukr":
+				return "ua";
+			case "ind":
+				return "in";
+			case "grc":
+				return "gr";
+			case "slv":
+				return "sv";
+			case "lka":
+				return "lk";
+			case "nga":
+				return "ng";
+			case "ken":
+				return "ke";
+			case "btn":
+				return "bt";
+			case "eri":
+				return "er";
+			case "lie":
+				return "li";
+			case "zmb":
+				return "zm";
+			case "grd":
+				return "gd";
+			case "rou":
+				return "ro";
+			case "swe":
+				return "se";
+			case "nam":
+				return "na";
+			case "mys":
+				return "my";
+			case "lbr":
+				return "lr";
+			case "syc":
+				return "sc";
+			case "vnm":
+				return "vn";
+			case "kna":
+				return "kn";
+			case "eth":
+				return "et";
+			case "myt":
+				return "yt";
+			case "dza":
+				return "dz";
+			case "mar":
+				return "ma";
+			case "ncl":
+				return "nc";
+			case "mco":
+				return "mc";
+			case "cze":
+				return "cz";
+			case "aus":
+				return "au";
+			case "pry":
+				return "py";
+			case "cpv":
+				return "cv";
+			case "pak":
+				return "pk";
+			case "khm":
+				return "kh";
+			case "tza":
+				return "tz";
+			case "nic":
+				return "ni";
+			case "aut":
+				return "at";
+			case "svk":
+				return "sk";
+			case "kaz":
+				return "kz";
+			case "mkd":
+				return "mk";
+			case "caf":
+				return "cf";
+			case "bfa":
+				return "bf";
+			default:
+				return null;
+		}
+	}
+
+	/**
+	 * Returns the three letter country for the two letter country code
+	 *
+	 * @param twoLetterCode
+	 * @return
+	 */
+	static String getThreeLetterCode(String twoLetterCode) {
+		switch (twoLetterCode) {
+			case "kr":
+				return "kor";
+			case "cf":
+				return "caf";
+			case "tc":
+				return "tca";
+			case "td":
+				return "tcd";
+			case "cg":
+				return "cog";
+			case "no":
+				return "nor";
+			case "ch":
+				return "che";
+			case "np":
+				return "npl";
+			case "ci":
+				return "civ";
+			case "tg":
+				return "tgo";
+			case "kw":
+				return "kwt";
+			case "ck":
+				return "cok";
+			case "nr":
+				return "nru";
+			case "th":
+				return "tha";
+			case "cl":
+				return "chl";
+			case "ky":
+				return "cym";
+			case "cm":
+				return "cmr";
+			case "tj":
+				return "tjk";
+			case "kz":
+				return "kaz";
+			case "cn":
+				return "chn";
+			case "fi":
+				return "fin";
+			case "nu":
+				return "niu";
+			case "id":
+				return "idn";
+			case "tl":
+				return "tls";
+			case "co":
+				return "col";
+			case "fj":
+				return "fji";
+			case "ie":
+				return "irl";
+			case "za":
+				return "zaf";
+			case "tk":
+				return "tkl";
+			case "la":
+				return "lao";
+			case "fk":
+				return "flk";
+			case "tm":
+				return "tkm";
+			case "wf":
+				return "wlf";
+			case "tn":
+				return "tun";
+			case "lb":
+				return "lbn";
+			case "to":
+				return "ton";
+			case "cr":
+				return "cri";
+			case "fm":
+				return "fsm";
+			case "lc":
+				return "lca";
+			case "nz":
+				return "nzl";
+			case "fo":
+				return "fro";
+			case "tr":
+				return "tur";
+			case "cu":
+				return "cub";
+			case "il":
+				return "isr";
+			case "cv":
+				return "cpv";
+			case "tt":
+				return "tto";
+			case "im":
+				return "imn";
+			case "fr":
+				return "fra";
+			case "in":
+				return "ind";
+			case "li":
+				return "lie";
+			case "cx":
+				return "cxr";
+			case "tv":
+				return "tuv";
+			case "cy":
+				return "cyp";
+			case "tw":
+				return "twn";
+			case "cz":
+				return "cze";
+			case "ad":
+				return "and";
+			case "lk":
+				return "lka";
+			case "zm":
+				return "zmb";
+			case "ws":
+				return "wsm";
+			case "iq":
+				return "irq";
+			case "ae":
+				return "are";
+			case "ir":
+				return "irn";
+			case "af":
+				return "afg";
+			case "tz":
+				return "tza";
+			case "ag":
+				return "atg";
+			case "it":
+				return "ita";
+			case "ua":
+				return "ukr";
+			case "ai":
+				return "aia";
+			case "de":
+				return "deu";
+			case "lr":
+				return "lbr";
+			case "ga":
+				return "gab";
+			case "om":
+				return "omn";
+			case "ls":
+				return "lso";
+			case "al":
+				return "alb";
+			case "gb":
+				return "gbr";
+			case "lt":
+				return "ltu";
+			case "am":
+				return "arm";
+			case "zw":
+				return "zwe";
+			case "lu":
+				return "lux";
+			case "gd":
+				return "grd";
+			case "lv":
+				return "lva";
+			case "ao":
+				return "ago";
+			case "dj":
+				return "dji";
+			case "ge":
+				return "geo";
+			case "ug":
+				return "uga";
+			case "dk":
+				return "dnk";
+			case "aq":
+				return "ata";
+			case "ly":
+				return "lby";
+			case "ar":
+				return "arg";
+			case "dm":
+				return "dma";
+			case "gh":
+				return "gha";
+			case "ro":
+				return "rou";
+			case "gi":
+				return "gib";
+			case "at":
+				return "aut";
+			case "do":
+				return "dom";
+			case "au":
+				return "aus";
+			case "ma":
+				return "mar";
+			case "rs":
+				return "srb";
+			case "gl":
+				return "grl";
+			case "aw":
+				return "abw";
+			case "mc":
+				return "mco";
+			case "gm":
+				return "gmb";
+			case "ru":
+				return "rus";
+			case "md":
+				return "mda";
+			case "gn":
+				return "gin";
+			case "me":
+				return "mne";
+			case "rw":
+				return "rwa";
+			case "az":
+				return "aze";
+			case "pa":
+				return "pan";
+			case "us":
+				return "usa";
+			case "gq":
+				return "gnq";
+			case "mg":
+				return "mdg";
+			case "gr":
+				return "grc";
+			case "ba":
+				return "bih";
+			case "jm":
+				return "jam";
+			case "mh":
+				return "mhl";
+			case "bb":
+				return "brb";
+			case "gt":
+				return "gtm";
+			case "jo":
+				return "jor";
+			case "pe":
+				return "per";
+			case "jp":
+				return "jpn";
+			case "bd":
+				return "bgd";
+			case "mk":
+				return "mkd";
+			case "dz":
+				return "dza";
+			case "pf":
+				return "pyf";
+			case "ml":
+				return "mli";
+			case "be":
+				return "bel";
+			case "pg":
+				return "png";
+			case "sa":
+				return "sau";
+			case "sb":
+				return "slb";
+			case "gw":
+				return "gnb";
+			case "bf":
+				return "bfa";
+			case "mm":
+				return "mmr";
+			case "ph":
+				return "phl";
+			case "sc":
+				return "syc";
+			case "mn":
+				return "mng";
+			case "bg":
+				return "bgr";
+			case "sd":
+				return "sdn";
+			case "uy":
+				return "ury";
+			case "uz":
+				return "uzb";
+			case "gy":
+				return "guy";
+			case "bh":
+				return "bhr";
+			case "ec":
+				return "ecu";
+			case "mo":
+				return "mac";
+			case "se":
+				return "swe";
+			case "pk":
+				return "pak";
+			case "bi":
+				return "bdi";
+			case "va":
+				return "vat";
+			case "pl":
+				return "pol";
+			case "bj":
+				return "ben";
+			case "ee":
+				return "est";
+			case "sg":
+				return "sgp";
+			case "mr":
+				return "mrt";
+			case "vc":
+				return "vct";
+			case "sh":
+				return "shn";
+			case "pm":
+				return "spm";
+			case "ms":
+				return "msr";
+			case "eg":
+				return "egy";
+			case "pn":
+				return "pcn";
+			case "bl":
+				return "blm";
+			case "si":
+				return "svn";
+			case "mt":
+				return "mlt";
+			case "bm":
+				return "bmu";
+			case "ve":
+				return "ven";
+			case "mu":
+				return "mus";
+			case "bn":
+				return "brn";
+			case "sk":
+				return "svk";
+			case "vg":
+				return "vgb";
+			case "bo":
+				return "bol";
+			case "mv":
+				return "mdv";
+			case "sl":
+				return "sle";
+			case "mw":
+				return "mwi";
+			case "pr":
+				return "pri";
+			case "sm":
+				return "smr";
+			case "mx":
+				return "mex";
+			case "sn":
+				return "sen";
+			case "vi":
+				return "vir";
+			case "my":
+				return "mys";
+			case "br":
+				return "bra";
+			case "pt":
+				return "prt";
+			case "so":
+				return "som";
+			case "ye":
+				return "yem";
+			case "mz":
+				return "moz";
+			case "bs":
+				return "bhs";
+			case "ke":
+				return "ken";
+			case "bt":
+				return "btn";
+			case "pw":
+				return "plw";
+			case "hk":
+				return "hkg";
+			case "na":
+				return "nam";
+			case "sr":
+				return "sur";
+			case "vn":
+				return "vnm";
+			case "kg":
+				return "kgz";
+			case "py":
+				return "pry";
+			case "kh":
+				return "khm";
+			case "bw":
+				return "bwa";
+			case "nc":
+				return "ncl";
+			case "er":
+				return "eri";
+			case "st":
+				return "stp";
+			case "hn":
+				return "hnd";
+			case "ki":
+				return "kir";
+			case "es":
+				return "esp";
+			case "sv":
+				return "slv";
+			case "by":
+				return "blr";
+			case "ne":
+				return "ner";
+			case "et":
+				return "eth";
+			case "bz":
+				return "blz";
+			case "qa":
+				return "qat";
+			case "sx":
+				return "sxm";
+			case "ng":
+				return "nga";
+			case "sy":
+				return "syr";
+			case "hr":
+				return "hrv";
+			case "ca":
+				return "can";
+			case "km":
+				return "com";
+			case "sz":
+				return "swz";
+			case "ni":
+				return "nic";
+			case "kn":
+				return "kna";
+			case "vu":
+				return "vut";
+			case "ht":
+				return "hti";
+			case "cc":
+				return "cck";
+			case "hu":
+				return "hun";
+			case "cd":
+				return "cod";
+			case "kp":
+				return "prk";
+			case "nl":
+				return "nld";
+			case "yt":
+				return "myt";
+			default:
+				return null;
+		}
+	}
+
+	/**
+	 * Returns image res based on country name code
+	 *
+	 * @param country
+	 * @return
+	 */
+	static int getFlagResID(Country country) {
+		switch (country.getNameCode()) {
+			case "afg": //afghanistan
+				return R.drawable.flag_afghanistan;
+			case "alb": //albania
+				return R.drawable.flag_albania;
+			case "dza": //algeria
+				return R.drawable.flag_algeria;
+			case "and": //andorra
+				return R.drawable.flag_andorra;
+			case "ago": //angola
+				return R.drawable.flag_angola;
+			case "ata": //antarctica // custom
+				return R.drawable.flag_antarctica;
+			case "arg": //argentina
+				return R.drawable.flag_argentina;
+			case "arm": //armenia
+				return R.drawable.flag_armenia;
+			case "abw": //aruba
+				return R.drawable.flag_aruba;
+			case "aus": //australia
+				return R.drawable.flag_australia;
+			case "aut": //austria
+				return R.drawable.flag_austria;
+			case "aze": //azerbaijan
+				return R.drawable.flag_azerbaijan;
+			case "bhr": //bahrain
+				return R.drawable.flag_bahrain;
+			case "bgd": //bangladesh
+				return R.drawable.flag_bangladesh;
+			case "blr": //belarus
+				return R.drawable.flag_belarus;
+			case "bel": //belgium
+				return R.drawable.flag_belgium;
+			case "blz": //belize
+				return R.drawable.flag_belize;
+			case "ben": //benin
+				return R.drawable.flag_benin;
+			case "btn": //bhutan
+				return R.drawable.flag_bhutan;
+			case "bol": //bolivia, plurinational state of
+				return R.drawable.flag_bolivia;
+			case "bih": //bosnia and herzegovina
+				return R.drawable.flag_bosnia;
+			case "bwa": //botswana
+				return R.drawable.flag_botswana;
+			case "bra": //brazil
+				return R.drawable.flag_brazil;
+			case "brn": //brunei darussalam // custom
+				return R.drawable.flag_brunei;
+			case "bgr": //bulgaria
+				return R.drawable.flag_bulgaria;
+			case "bfa": //burkina faso
+				return R.drawable.flag_burkina_faso;
+			case "mmr": //myanmar
+				return R.drawable.flag_myanmar;
+			case "bdi": //burundi
+				return R.drawable.flag_burundi;
+			case "khm": //cambodia
+				return R.drawable.flag_cambodia;
+			case "cmr": //cameroon
+				return R.drawable.flag_cameroon;
+			case "can": //canada
+				return R.drawable.flag_canada;
+			case "cpv": //cape verde
+				return R.drawable.flag_cape_verde;
+			case "caf": //central african republic
+				return R.drawable.flag_central_african_republic;
+			case "tcd": //chad
+				return R.drawable.flag_chad;
+			case "chl": //chile
+				return R.drawable.flag_chile;
+			case "chn": //china
+				return R.drawable.flag_china;
+			case "cxr": //christmas island
+				return R.drawable.flag_christmas_island;
+			case "cck": //cocos (keeling) islands
+				return R.drawable.flag_cocos;// custom
+			case "col": //colombia
+				return R.drawable.flag_colombia;
+			case "com": //comoros
+				return R.drawable.flag_comoros;
+			case "cog": //congo
+				return R.drawable.flag_republic_of_the_congo;
+			case "cod": //congo, the democratic republic of the
+				return R.drawable.flag_democratic_republic_of_the_congo;
+			case "cok": //cook islands
+				return R.drawable.flag_cook_islands;
+			case "cri": //costa rica
+				return R.drawable.flag_costa_rica;
+			case "hrv": //croatia
+				return R.drawable.flag_croatia;
+			case "cub": //cuba
+				return R.drawable.flag_cuba;
+			case "cyp": //cyprus
+				return R.drawable.flag_cyprus;
+			case "cze": //czech republic
+				return R.drawable.flag_czech_republic;
+			case "dnk": //denmark
+				return R.drawable.flag_denmark;
+			case "dji": //djibouti
+				return R.drawable.flag_djibouti;
+			case "tls": //timor-leste
+				return R.drawable.flag_timor_leste;
+			case "ecu": //ecuador
+				return R.drawable.flag_ecuador;
+			case "egy": //egypt
+				return R.drawable.flag_egypt;
+			case "slv": //el salvador
+				return R.drawable.flag_el_salvador;
+			case "gnq": //equatorial guinea
+				return R.drawable.flag_equatorial_guinea;
+			case "eri": //eritrea
+				return R.drawable.flag_eritrea;
+			case "est": //estonia
+				return R.drawable.flag_estonia;
+			case "eth": //ethiopia
+				return R.drawable.flag_ethiopia;
+			case "flk": //falkland islands (malvinas)
+				return R.drawable.flag_falkland_islands;
+			case "fro": //faroe islands
+				return R.drawable.flag_faroe_islands;
+			case "fji": //fiji
+				return R.drawable.flag_fiji;
+			case "fin": //finland
+				return R.drawable.flag_finland;
+			case "fra": //france
+				return R.drawable.flag_france;
+			case "pyf": //french polynesia
+				return R.drawable.flag_french_polynesia;
+			case "gab": //gabon
+				return R.drawable.flag_gabon;
+			case "gmb": //gambia
+				return R.drawable.flag_gambia;
+			case "geo": //georgia
+				return R.drawable.flag_georgia;
+			case "deu": //germany
+				return R.drawable.flag_germany;
+			case "gha": //ghana
+				return R.drawable.flag_ghana;
+			case "gib": //gibraltar
+				return R.drawable.flag_gibraltar;
+			case "grc": //greece
+				return R.drawable.flag_greece;
+			case "grl": //greenland
+				return R.drawable.flag_greenland;
+			case "gtm": //guatemala
+				return R.drawable.flag_guatemala;
+			case "gin": //guinea
+				return R.drawable.flag_guinea;
+			case "gnb": //guinea-bissau
+				return R.drawable.flag_guinea_bissau;
+			case "guy": //guyana
+				return R.drawable.flag_guyana;
+			case "hti": //haiti
+				return R.drawable.flag_haiti;
+			case "hnd": //honduras
+				return R.drawable.flag_honduras;
+			case "hkg": //hong kong
+				return R.drawable.flag_hong_kong;
+			case "hun": //hungary
+				return R.drawable.flag_hungary;
+			case "ind": //india
+				return R.drawable.flag_india;
+			case "idn": //indonesia
+				return R.drawable.flag_indonesia;
+			case "irn": //iran, islamic republic of
+				return R.drawable.flag_iran;
+			case "irq": //iraq
+				return R.drawable.flag_iraq;
+			case "irl": //ireland
+				return R.drawable.flag_ireland;
+			case "imn": //isle of man
+				return R.drawable.flag_isleof_man; // custom
+			case "isr": //israel
+				return R.drawable.flag_israel;
+			case "ita": //italy
+				return R.drawable.flag_italy;
+			case "civ": //côte d\'ivoire
+				return R.drawable.flag_cote_divoire;
+			case "jpn": //japan
+				return R.drawable.flag_japan;
+			case "jor": //jordan
+				return R.drawable.flag_jordan;
+			case "kaz": //kazakhstan
+				return R.drawable.flag_kazakhstan;
+			case "ken": //kenya
+				return R.drawable.flag_kenya;
+			case "kir": //kiribati
+				return R.drawable.flag_kiribati;
+			case "kwt": //kuwait
+				return R.drawable.flag_kuwait;
+			case "kgz": //kyrgyzstan
+				return R.drawable.flag_kyrgyzstan;
+			case "lao": //lao people\'s democratic republic
+				return R.drawable.flag_laos;
+			case "lva": //latvia
+				return R.drawable.flag_latvia;
+			case "lbn": //lebanon
+				return R.drawable.flag_lebanon;
+			case "lso": //lesotho
+				return R.drawable.flag_lesotho;
+			case "lbr": //liberia
+				return R.drawable.flag_liberia;
+			case "lby": //libya
+				return R.drawable.flag_libya;
+			case "lie": //liechtenstein
+				return R.drawable.flag_liechtenstein;
+			case "ltu": //lithuania
+				return R.drawable.flag_lithuania;
+			case "lux": //luxembourg
+				return R.drawable.flag_luxembourg;
+			case "mac": //macao
+				return R.drawable.flag_macao;
+			case "mkd": //macedonia, the former yugoslav republic of
+				return R.drawable.flag_macedonia;
+			case "mdg": //madagascar
+				return R.drawable.flag_madagascar;
+			case "mwi": //malawi
+				return R.drawable.flag_malawi;
+			case "mys": //malaysia
+				return R.drawable.flag_malaysia;
+			case "mdv": //maldives
+				return R.drawable.flag_maldives;
+			case "mli": //mali
+				return R.drawable.flag_mali;
+			case "mlt": //malta
+				return R.drawable.flag_malta;
+			case "mhl": //marshall islands
+				return R.drawable.flag_marshall_islands;
+			case "mrt": //mauritania
+				return R.drawable.flag_mauritania;
+			case "mus": //mauritius
+				return R.drawable.flag_mauritius;
+			case "myt": //mayotte
+				return R.drawable.flag_martinique; // no exact flag found
+			case "mex": //mexico
+				return R.drawable.flag_mexico;
+			case "fsm": //micronesia, federated states of
+				return R.drawable.flag_micronesia;
+			case "mda": //moldova, republic of
+				return R.drawable.flag_moldova;
+			case "mco": //monaco
+				return R.drawable.flag_monaco;
+			case "mng": //mongolia
+				return R.drawable.flag_mongolia;
+			case "mne": //montenegro
+				return R.drawable.flag_of_montenegro;// custom
+			case "mar": //morocco
+				return R.drawable.flag_morocco;
+			case "moz": //mozambique
+				return R.drawable.flag_mozambique;
+			case "nam": //namibia
+				return R.drawable.flag_namibia;
+			case "nru": //nauru
+				return R.drawable.flag_nauru;
+			case "npl": //nepal
+				return R.drawable.flag_nepal;
+			case "nld": //netherlands
+				return R.drawable.flag_netherlands;
+			case "ncl": //new caledonia
+				return R.drawable.flag_new_caledonia;// custom
+			case "nzl": //new zealand
+				return R.drawable.flag_new_zealand;
+			case "nic": //nicaragua
+				return R.drawable.flag_nicaragua;
+			case "ner": //niger
+				return R.drawable.flag_niger;
+			case "nga": //nigeria
+				return R.drawable.flag_nigeria;
+			case "niu": //niue
+				return R.drawable.flag_niue;
+			case "kp": //north korea
+				return R.drawable.flag_north_korea;
+			case "nor": //norway
+				return R.drawable.flag_norway;
+			case "omn": //oman
+				return R.drawable.flag_oman;
+			case "pak": //pakistan
+				return R.drawable.flag_pakistan;
+			case "plw": //palau
+				return R.drawable.flag_palau;
+			case "pan": //panama
+				return R.drawable.flag_panama;
+			case "png": //papua new guinea
+				return R.drawable.flag_papua_new_guinea;
+			case "pry": //paraguay
+				return R.drawable.flag_paraguay;
+			case "per": //peru
+				return R.drawable.flag_peru;
+			case "phl": //philippines
+				return R.drawable.flag_philippines;
+			case "pcn": //pitcairn
+				return R.drawable.flag_pitcairn_islands;
+			case "pol": //poland
+				return R.drawable.flag_poland;
+			case "prt": //portugal
+				return R.drawable.flag_portugal;
+			case "pri": //puerto rico
+				return R.drawable.flag_puerto_rico;
+			case "qat": //qatar
+				return R.drawable.flag_qatar;
+			case "rou": //romania
+				return R.drawable.flag_romania;
+			case "rus": //russian federation
+				return R.drawable.flag_russian_federation;
+			case "rwa": //rwanda
+				return R.drawable.flag_rwanda;
+			case "blm": //saint barthélemy
+				return R.drawable.flag_saint_barthelemy;// custom
+			case "wsm": //samoa
+				return R.drawable.flag_samoa;
+			case "smr": //san marino
+				return R.drawable.flag_san_marino;
+			case "stp": //sao tome and principe
+				return R.drawable.flag_sao_tome_and_principe;
+			case "sau": //saudi arabia
+				return R.drawable.flag_saudi_arabia;
+			case "sen": //senegal
+				return R.drawable.flag_senegal;
+			case "srb": //serbia
+				return R.drawable.flag_serbia; // custom
+			case "syc": //seychelles
+				return R.drawable.flag_seychelles;
+			case "sle": //sierra leone
+				return R.drawable.flag_sierra_leone;
+			case "sgp": //singapore
+				return R.drawable.flag_singapore;
+			case "svk": //slovakia
+				return R.drawable.flag_slovakia;
+			case "svn": //slovenia
+				return R.drawable.flag_slovenia;
+			case "slb": //solomon islands
+				return R.drawable.flag_soloman_islands;
+			case "som": //somalia
+				return R.drawable.flag_somalia;
+			case "zaf": //south africa
+				return R.drawable.flag_south_africa;
+			case "kor": //south korea
+				return R.drawable.flag_south_korea;
+			case "esp": //spain
+				return R.drawable.flag_spain;
+			case "lka": //sri lanka
+				return R.drawable.flag_sri_lanka;
+			case "shn": //saint helena, ascension and tristan da cunha
+				return R.drawable.flag_saint_helena; // custom
+			case "spm": //saint pierre and miquelon
+				return R.drawable.flag_saint_pierre;
+			case "sdn": //sudan
+				return R.drawable.flag_sudan;
+			case "sur": //suriname
+				return R.drawable.flag_suriname;
+			case "swz": //swaziland
+				return R.drawable.flag_swaziland;
+			case "swe": //sweden
+				return R.drawable.flag_sweden;
+			case "che": //switzerland
+				return R.drawable.flag_switzerland;
+			case "syr": //syrian arab republic
+				return R.drawable.flag_syria;
+			case "twn": //taiwan, province of china
+				return R.drawable.flag_taiwan;
+			case "tjk": //tajikistan
+				return R.drawable.flag_tajikistan;
+			case "tza": //tanzania, united republic of
+				return R.drawable.flag_tanzania;
+			case "tha": //thailand
+				return R.drawable.flag_thailand;
+			case "tgo": //togo
+				return R.drawable.flag_togo;
+			case "tkl": //tokelau
+				return R.drawable.flag_tokelau; // custom
+			case "ton": //tonga
+				return R.drawable.flag_tonga;
+			case "tun": //tunisia
+				return R.drawable.flag_tunisia;
+			case "tur": //turkey
+				return R.drawable.flag_turkey;
+			case "tkm": //turkmenistan
+				return R.drawable.flag_turkmenistan;
+			case "tuv": //tuvalu
+				return R.drawable.flag_tuvalu;
+			case "are": //united arab emirates
+				return R.drawable.flag_uae;
+			case "uga": //uganda
+				return R.drawable.flag_uganda;
+			case "gbr": //united kingdom
+				return R.drawable.flag_united_kingdom;
+			case "ukr": //ukraine
+				return R.drawable.flag_ukraine;
+			case "ury": //uruguay
+				return R.drawable.flag_uruguay;
+			case "usa": //united states
+				return R.drawable.flag_united_states_of_america;
+			case "uzb": //uzbekistan
+				return R.drawable.flag_uzbekistan;
+			case "vut": //vanuatu
+				return R.drawable.flag_vanuatu;
+			case "vat": //holy see (vatican city state)
+				return R.drawable.flag_vatican_city;
+			case "ven": //venezuela, bolivarian republic of
+				return R.drawable.flag_venezuela;
+			case "vnm": //vietnam
+				return R.drawable.flag_vietnam;
+			case "wlf": //wallis and futuna
+				return R.drawable.flag_wallis_and_futuna;
+			case "yem": //yemen
+				return R.drawable.flag_yemen;
+			case "zmb": //zambia
+				return R.drawable.flag_zambia;
+			case "zwe": //zimbabwe
+				return R.drawable.flag_zimbabwe;
 
 // Caribbean Islands
-            case "aia": //anguilla
-                return R.drawable.flag_anguilla;
-            case "atg": //antigua & barbuda
-                return R.drawable.flag_antigua_and_barbuda;
-            case "bhs": //bahamas
-                return R.drawable.flag_bahamas;
-            case "brb": //barbados
-                return R.drawable.flag_barbados;
-            case "bmu": //bermuda
-                return R.drawable.flag_bermuda;
-            case "vgb": //british virgin islands
-                return R.drawable.flag_british_virgin_islands;
-            case "dma": //dominica
-                return R.drawable.flag_dominica;
-            case "dom": //dominican republic
-                return R.drawable.flag_dominican_republic;
-            case "grd": //grenada
-                return R.drawable.flag_grenada;
-            case "jam": //jamaica
-                return R.drawable.flag_jamaica;
-            case "msr": //montserrat
-                return R.drawable.flag_montserrat;
-            case "kna": //st kitts & nevis
-                return R.drawable.flag_saint_kitts_and_nevis;
-            case "lca": //st lucia
-                return R.drawable.flag_saint_lucia;
-            case "vct": //st vincent & the grenadines
-                return R.drawable.flag_saint_vicent_and_the_grenadines;
-            case "tto": //trinidad & tobago
-                return R.drawable.flag_trinidad_and_tobago;
-            case "tca": //turks & caicos islands
-                return R.drawable.flag_turks_and_caicos_islands;
-            case "vir": //us virgin islands
-                return R.drawable.flag_us_virgin_islands;
-            default:
-                return R.drawable.flag_transparent;
-        }
-    }
+			case "aia": //anguilla
+				return R.drawable.flag_anguilla;
+			case "atg": //antigua & barbuda
+				return R.drawable.flag_antigua_and_barbuda;
+			case "bhs": //bahamas
+				return R.drawable.flag_bahamas;
+			case "brb": //barbados
+				return R.drawable.flag_barbados;
+			case "bmu": //bermuda
+				return R.drawable.flag_bermuda;
+			case "vgb": //british virgin islands
+				return R.drawable.flag_british_virgin_islands;
+			case "dma": //dominica
+				return R.drawable.flag_dominica;
+			case "dom": //dominican republic
+				return R.drawable.flag_dominican_republic;
+			case "grd": //grenada
+				return R.drawable.flag_grenada;
+			case "jam": //jamaica
+				return R.drawable.flag_jamaica;
+			case "msr": //montserrat
+				return R.drawable.flag_montserrat;
+			case "kna": //st kitts & nevis
+				return R.drawable.flag_saint_kitts_and_nevis;
+			case "lca": //st lucia
+				return R.drawable.flag_saint_lucia;
+			case "vct": //st vincent & the grenadines
+				return R.drawable.flag_saint_vicent_and_the_grenadines;
+			case "tto": //trinidad & tobago
+				return R.drawable.flag_trinidad_and_tobago;
+			case "tca": //turks & caicos islands
+				return R.drawable.flag_turks_and_caicos_islands;
+			case "vir": //us virgin islands
+				return R.drawable.flag_us_virgin_islands;
+			default:
+				return R.drawable.flag_transparent;
+		}
+	}
 
     /**
      * This will return all the countries. No preference is manages.
@@ -711,234 +1633,234 @@ class Country {
         }
     }
 
-    public static List<Country> getLibraryMasterCountriesEnglish() {
-        List<Country> countries = new ArrayList<>();
-        countries.add(new Country("afg", "93", "Afghanistan"));
-        countries.add(new Country("alb", "355", "Albania"));
-        countries.add(new Country("dza", "213", "Algeria"));
-        countries.add(new Country("and", "376", "Andorra"));
-        countries.add(new Country("ago", "244", "Angola"));
-        countries.add(new Country("aia", "1", "Anguilla"));
-        countries.add(new Country("ata", "672", "Antarctica"));
-        countries.add(new Country("atg", "1", "Antigua and Barbuda"));
-        countries.add(new Country("arg", "54", "Argentina"));
-        countries.add(new Country("arm", "374", "Armenia"));
-        countries.add(new Country("abw", "297", "Aruba"));
-        countries.add(new Country("aus", "61", "Australia"));
-        countries.add(new Country("aut", "43", "Austria"));
-        countries.add(new Country("aze", "994", "Azerbaijan"));
-        countries.add(new Country("bhs", "1", "Bahamas"));
-        countries.add(new Country("bhr", "973", "Bahrain"));
-        countries.add(new Country("bgd", "880", "Bangladesh"));
-        countries.add(new Country("brb", "1", "Barbados"));
-        countries.add(new Country("blr", "375", "Belarus"));
-        countries.add(new Country("bel", "32", "Belgium"));
-        countries.add(new Country("blz", "501", "Belize"));
-        countries.add(new Country("ben", "229", "Benin"));
-        countries.add(new Country("bmu", "1", "Bermuda"));
-        countries.add(new Country("btn", "975", "Bhutan"));
-        countries.add(new Country("bol", "591", "Bolivia, Plurinational State Of"));
-        countries.add(new Country("bih", "387", "Bosnia And Herzegovina"));
-        countries.add(new Country("bwa", "267", "Botswana"));
-        countries.add(new Country("bra", "55", "Brazil"));
-        countries.add(new Country("vgb", "1", "British Virgin Islands"));
-        countries.add(new Country("brn", "673", "Brunei Darussalam"));
-        countries.add(new Country("bgr", "359", "Bulgaria"));
-        countries.add(new Country("bfa", "226", "Burkina Faso"));
-        countries.add(new Country("mmr", "95", "Myanmar"));
-        countries.add(new Country("bdi", "257", "Burundi"));
-        countries.add(new Country("khm", "855", "Cambodia"));
-        countries.add(new Country("cmr", "237", "Cameroon"));
-        countries.add(new Country("can", "1", "Canada"));
-        countries.add(new Country("cpv", "238", "Cape Verde"));
-        countries.add(new Country("cym", "1", "Cayman Islands"));
-        countries.add(new Country("caf", "236", "Central African Republic"));
-        countries.add(new Country("tcd", "235", "Chad"));
-        countries.add(new Country("chl", "56", "Chile"));
-        countries.add(new Country("chn", "86", "China"));
-        countries.add(new Country("cxr", "61", "Christmas Island"));
-        countries.add(new Country("cck", "61", "Cocos (keeling) Islands"));
-        countries.add(new Country("col", "57", "Colombia"));
-        countries.add(new Country("com", "269", "Comoros"));
-        countries.add(new Country("cog", "242", "Congo"));
-        countries.add(new Country("cog", "243", "Congo, The Democratic Republic Of The"));
-        countries.add(new Country("cok", "682", "Cook Islands"));
-        countries.add(new Country("cri", "506", "Costa Rica"));
-        countries.add(new Country("hrv", "385", "Croatia"));
-        countries.add(new Country("cub", "53", "Cuba"));
-        countries.add(new Country("cyp", "357", "Cyprus"));
-        countries.add(new Country("cze", "420", "Czech Republic"));
-        countries.add(new Country("dnk", "45", "Denmark"));
-        countries.add(new Country("dji", "253", "Djibouti"));
-        countries.add(new Country("dma", "1", "Dominica"));
-        countries.add(new Country("dom", "1", "Dominican Republic"));
-        countries.add(new Country("tls", "670", "Timor-leste"));
-        countries.add(new Country("ecu", "593", "Ecuador"));
-        countries.add(new Country("egy", "20", "Egypt"));
-        countries.add(new Country("slv", "503", "El Salvador"));
-        countries.add(new Country("gnq", "240", "Equatorial Guinea"));
-        countries.add(new Country("eri", "291", "Eritrea"));
-        countries.add(new Country("est", "372", "Estonia"));
-        countries.add(new Country("eth", "251", "Ethiopia"));
-        countries.add(new Country("flk", "500", "Falkland Islands (malvinas)"));
-        countries.add(new Country("fro", "298", "Faroe Islands"));
-        countries.add(new Country("fji", "679", "Fiji"));
-        countries.add(new Country("fin", "358", "Finland"));
-        countries.add(new Country("fra", "33", "France"));
-        countries.add(new Country("pyf", "689", "French Polynesia"));
-        countries.add(new Country("gab", "241", "Gabon"));
-        countries.add(new Country("gmb", "220", "Gambia"));
-        countries.add(new Country("geo", "995", "Georgia"));
-        countries.add(new Country("deu", "49", "Germany"));
-        countries.add(new Country("gha", "233", "Ghana"));
-        countries.add(new Country("gib", "350", "Gibraltar"));
-        countries.add(new Country("grc", "30", "Greece"));
-        countries.add(new Country("grl", "299", "Greenland"));
-        countries.add(new Country("grd", "1", "Grenada"));
-        countries.add(new Country("gtm", "502", "Guatemala"));
-        countries.add(new Country("gin", "224", "Guinea"));
-        countries.add(new Country("gnb", "245", "Guinea-bissau"));
-        countries.add(new Country("guy", "592", "Guyana"));
-        countries.add(new Country("hti", "509", "Haiti"));
-        countries.add(new Country("hnd", "504", "Honduras"));
-        countries.add(new Country("hkg", "852", "Hong Kong"));
-        countries.add(new Country("hun", "36", "Hungary"));
-        countries.add(new Country("ind", "91", "India"));
-        countries.add(new Country("idn", "62", "Indonesia"));
-        countries.add(new Country("irn", "98", "Iran, Islamic Republic Of"));
-        countries.add(new Country("irq", "964", "Iraq"));
-        countries.add(new Country("irl", "353", "Ireland"));
-        countries.add(new Country("imn", "44", "Isle Of Man"));
-        countries.add(new Country("isr", "972", "Israel"));
-        countries.add(new Country("ita", "39", "Italy"));
-        countries.add(new Country("civ", "225", "Côte D'ivoire"));
-        countries.add(new Country("jam", "1", "Jamaica"));
-        countries.add(new Country("jpn", "81", "Japan"));
-        countries.add(new Country("jor", "962", "Jordan"));
-        countries.add(new Country("kaz", "7", "Kazakhstan"));
-        countries.add(new Country("ken", "254", "Kenya"));
-        countries.add(new Country("kir", "686", "Kiribati"));
-        countries.add(new Country("kwt", "965", "Kuwait"));
-        countries.add(new Country("kgz", "996", "Kyrgyzstan"));
-        countries.add(new Country("lao", "856", "Lao People's Democratic Republic"));
-        countries.add(new Country("lva", "371", "Latvia"));
-        countries.add(new Country("lbn", "961", "Lebanon"));
-        countries.add(new Country("lso", "266", "Lesotho"));
-        countries.add(new Country("lbr", "231", "Liberia"));
-        countries.add(new Country("lby", "218", "Libya"));
-        countries.add(new Country("lie", "423", "Liechtenstein"));
-        countries.add(new Country("ltu", "370", "Lithuania"));
-        countries.add(new Country("lux", "352", "Luxembourg"));
-        countries.add(new Country("mac", "853", "Macao"));
-        countries.add(new Country("mkd", "389", "Macedonia, The Former Yugoslav Republic Of"));
-        countries.add(new Country("mdg", "261", "Madagascar"));
-        countries.add(new Country("mwi", "265", "Malawi"));
-        countries.add(new Country("mys", "60", "Malaysia"));
-        countries.add(new Country("mdv", "960", "Maldives"));
-        countries.add(new Country("mli", "223", "Mali"));
-        countries.add(new Country("mlt", "356", "Malta"));
-        countries.add(new Country("mhl", "692", "Marshall Islands"));
-        countries.add(new Country("mrt", "222", "Mauritania"));
-        countries.add(new Country("mus", "230", "Mauritius"));
-        countries.add(new Country("myt", "262", "Mayotte"));
-        countries.add(new Country("mex", "52", "Mexico"));
-        countries.add(new Country("fsm", "691", "Micronesia, Federated States Of"));
-        countries.add(new Country("mda", "373", "Moldova, Republic Of"));
-        countries.add(new Country("mco", "377", "Monaco"));
-        countries.add(new Country("mng", "976", "Mongolia"));
-        countries.add(new Country("msr", "1", "Montserrat"));
-        countries.add(new Country("mne", "382", "Montenegro"));
-        countries.add(new Country("mar", "212", "Morocco"));
-        countries.add(new Country("moz", "258", "Mozambique"));
-        countries.add(new Country("nam", "264", "Namibia"));
-        countries.add(new Country("nru", "674", "Nauru"));
-        countries.add(new Country("npl", "977", "Nepal"));
-        countries.add(new Country("nld", "31", "Netherlands"));
-        countries.add(new Country("ncl", "687", "New Caledonia"));
-        countries.add(new Country("nzl", "64", "New Zealand"));
-        countries.add(new Country("nic", "505", "Nicaragua"));
-        countries.add(new Country("ner", "227", "Niger"));
-        countries.add(new Country("nga", "234", "Nigeria"));
-        countries.add(new Country("niu", "683", "Niue"));
-        countries.add(new Country("prk", "850", "North Korea"));
-        countries.add(new Country("nor", "47", "Norway"));
-        countries.add(new Country("omn", "968", "Oman"));
-        countries.add(new Country("pak", "92", "Pakistan"));
-        countries.add(new Country("plw", "680", "Palau"));
-        countries.add(new Country("pan", "507", "Panama"));
-        countries.add(new Country("png", "675", "Papua New Guinea"));
-        countries.add(new Country("pry", "595", "Paraguay"));
-        countries.add(new Country("per", "51", "Peru"));
-        countries.add(new Country("phl", "63", "Philippines"));
-        countries.add(new Country("pcn", "870", "Pitcairn"));
-        countries.add(new Country("pol", "48", "Poland"));
-        countries.add(new Country("prt", "351", "Portugal"));
-        countries.add(new Country("pri", "1", "Puerto Rico"));
-        countries.add(new Country("qat", "974", "Qatar"));
-        countries.add(new Country("rou", "40", "Romania"));
-        countries.add(new Country("rus", "7", "Russian Federation"));
-        countries.add(new Country("rwa", "250", "Rwanda"));
-        countries.add(new Country("blm", "590", "Saint Barthélemy"));
-        countries.add(new Country("kna", "1", "Saint Kitts and Nevis"));
-        countries.add(new Country("lca", "1", "Saint Lucia"));
-        countries.add(new Country("vct", "1", "Saint Vincent & The Grenadines"));
-        countries.add(new Country("wsm", "685", "Samoa"));
-        countries.add(new Country("smr", "378", "San Marino"));
-        countries.add(new Country("stp", "239", "Sao Tome And Principe"));
-        countries.add(new Country("sau", "966", "Saudi Arabia"));
-        countries.add(new Country("sen", "221", "Senegal"));
-        countries.add(new Country("srb", "381", "Serbia"));
-        countries.add(new Country("syc", "248", "Seychelles"));
-        countries.add(new Country("sle", "232", "Sierra Leone"));
-        countries.add(new Country("sgp", "65", "Singapore"));
-        countries.add(new Country("sxm", "1", "Sint Maarten"));
-        countries.add(new Country("svk", "421", "Slovakia"));
-        countries.add(new Country("svn", "386", "Slovenia"));
-        countries.add(new Country("slb", "677", "Solomon Islands"));
-        countries.add(new Country("som", "252", "Somalia"));
-        countries.add(new Country("zaf", "27", "South Africa"));
-        countries.add(new Country("kor", "82", "South Korea"));
-        countries.add(new Country("esp", "34", "Spain"));
-        countries.add(new Country("lka", "94", "Sri Lanka"));
-        countries.add(new Country("shn", "290", "Saint Helena, Ascension And Tristan Da Cunha"));
-        countries.add(new Country("spm", "508", "Saint Pierre And Miquelon"));
-        countries.add(new Country("sdn", "249", "Sudan"));
-        countries.add(new Country("sur", "597", "Suriname"));
-        countries.add(new Country("swz", "268", "Swaziland"));
-        countries.add(new Country("swe", "46", "Sweden"));
-        countries.add(new Country("che", "41", "Switzerland"));
-        countries.add(new Country("syr", "963", "Syrian Arab Republic"));
-        countries.add(new Country("chn", "886", "Taiwan, Province Of China"));
-        countries.add(new Country("tjk", "992", "Tajikistan"));
-        countries.add(new Country("tza", "255", "Tanzania, United Republic Of"));
-        countries.add(new Country("tha", "66", "Thailand"));
-        countries.add(new Country("tgo", "228", "Togo"));
-        countries.add(new Country("tkl", "690", "Tokelau"));
-        countries.add(new Country("ton", "676", "Tonga"));
-        countries.add(new Country("tto", "1", "Trinidad & Tobago"));
-        countries.add(new Country("tun", "216", "Tunisia"));
-        countries.add(new Country("tur", "90", "Turkey"));
-        countries.add(new Country("tkm", "993", "Turkmenistan"));
-        countries.add(new Country("tca", "1", "Turks and Caicos Islands"));
-        countries.add(new Country("tuv", "688", "Tuvalu"));
-        countries.add(new Country("are", "971", "United Arab Emirates"));
-        countries.add(new Country("uga", "256", "Uganda"));
-        countries.add(new Country("gbr", "44", "United Kingdom"));
-        countries.add(new Country("ukr", "380", "Ukraine"));
-        countries.add(new Country("ury", "598", "Uruguay"));
-        countries.add(new Country("usa", "1", "United States"));
-        countries.add(new Country("vir", "1", "US Virgin Islands"));
-        countries.add(new Country("uzb", "998", "Uzbekistan"));
-        countries.add(new Country("vut", "678", "Vanuatu"));
-        countries.add(new Country("vat", "39", "Holy See (vatican City State)"));
-        countries.add(new Country("ven", "58", "Venezuela, Bolivarian Republic Of"));
-        countries.add(new Country("vnm", "84", "Viet Nam"));
-        countries.add(new Country("wlf", "681", "Wallis And Futuna"));
-        countries.add(new Country("yem", "967", "Yemen"));
-        countries.add(new Country("zmb", "260", "Zambia"));
-        countries.add(new Country("zwe", "263", "Zimbabwe"));
-        return countries;
-    }
+	public static List<Country> getLibraryMasterCountriesEnglish() {
+		List<Country> countries = new ArrayList<>();
+		countries.add(new Country("afg", "93", "Afghanistan"));
+		countries.add(new Country("alb", "355", "Albania"));
+		countries.add(new Country("dza", "213", "Algeria"));
+		countries.add(new Country("and", "376", "Andorra"));
+		countries.add(new Country("ago", "244", "Angola"));
+		countries.add(new Country("aia", "1", "Anguilla"));
+		countries.add(new Country("ata", "672", "Antarctica"));
+		countries.add(new Country("atg", "1", "Antigua and Barbuda"));
+		countries.add(new Country("arg", "54", "Argentina"));
+		countries.add(new Country("arm", "374", "Armenia"));
+		countries.add(new Country("abw", "297", "Aruba"));
+		countries.add(new Country("aus", "61", "Australia"));
+		countries.add(new Country("aut", "43", "Austria"));
+		countries.add(new Country("aze", "994", "Azerbaijan"));
+		countries.add(new Country("bhs", "1", "Bahamas"));
+		countries.add(new Country("bhr", "973", "Bahrain"));
+		countries.add(new Country("bgd", "880", "Bangladesh"));
+		countries.add(new Country("brb", "1", "Barbados"));
+		countries.add(new Country("blr", "375", "Belarus"));
+		countries.add(new Country("bel", "32", "Belgium"));
+		countries.add(new Country("blz", "501", "Belize"));
+		countries.add(new Country("ben", "229", "Benin"));
+		countries.add(new Country("bmu", "1", "Bermuda"));
+		countries.add(new Country("btn", "975", "Bhutan"));
+		countries.add(new Country("bol", "591", "Bolivia, Plurinational State Of"));
+		countries.add(new Country("bih", "387", "Bosnia And Herzegovina"));
+		countries.add(new Country("bwa", "267", "Botswana"));
+		countries.add(new Country("bra", "55", "Brazil"));
+		countries.add(new Country("vgb", "1", "British Virgin Islands"));
+		countries.add(new Country("brn", "673", "Brunei Darussalam"));
+		countries.add(new Country("bgr", "359", "Bulgaria"));
+		countries.add(new Country("bfa", "226", "Burkina Faso"));
+		countries.add(new Country("mmr", "95", "Myanmar"));
+		countries.add(new Country("bdi", "257", "Burundi"));
+		countries.add(new Country("khm", "855", "Cambodia"));
+		countries.add(new Country("cmr", "237", "Cameroon"));
+		countries.add(new Country("can", "1", "Canada"));
+		countries.add(new Country("cpv", "238", "Cape Verde"));
+		countries.add(new Country("cym", "1", "Cayman Islands"));
+		countries.add(new Country("caf", "236", "Central African Republic"));
+		countries.add(new Country("tcd", "235", "Chad"));
+		countries.add(new Country("chl", "56", "Chile"));
+		countries.add(new Country("chn", "86", "China"));
+		countries.add(new Country("cxr", "61", "Christmas Island"));
+		countries.add(new Country("cck", "61", "Cocos (keeling) Islands"));
+		countries.add(new Country("col", "57", "Colombia"));
+		countries.add(new Country("com", "269", "Comoros"));
+		countries.add(new Country("cog", "242", "Congo"));
+		countries.add(new Country("cod", "243", "Congo, The Democratic Republic Of The"));
+		countries.add(new Country("cok", "682", "Cook Islands"));
+		countries.add(new Country("cri", "506", "Costa Rica"));
+		countries.add(new Country("hrv", "385", "Croatia"));
+		countries.add(new Country("cub", "53", "Cuba"));
+		countries.add(new Country("cyp", "357", "Cyprus"));
+		countries.add(new Country("cze", "420", "Czech Republic"));
+		countries.add(new Country("dnk", "45", "Denmark"));
+		countries.add(new Country("dji", "253", "Djibouti"));
+		countries.add(new Country("dma", "1", "Dominica"));
+		countries.add(new Country("dom", "1", "Dominican Republic"));
+		countries.add(new Country("tls", "670", "Timor-leste"));
+		countries.add(new Country("ecu", "593", "Ecuador"));
+		countries.add(new Country("egy", "20", "Egypt"));
+		countries.add(new Country("slv", "503", "El Salvador"));
+		countries.add(new Country("gnq", "240", "Equatorial Guinea"));
+		countries.add(new Country("eri", "291", "Eritrea"));
+		countries.add(new Country("est", "372", "Estonia"));
+		countries.add(new Country("eth", "251", "Ethiopia"));
+		countries.add(new Country("flk", "500", "Falkland Islands (malvinas)"));
+		countries.add(new Country("fro", "298", "Faroe Islands"));
+		countries.add(new Country("fji", "679", "Fiji"));
+		countries.add(new Country("fin", "358", "Finland"));
+		countries.add(new Country("fra", "33", "France"));
+		countries.add(new Country("pyf", "689", "French Polynesia"));
+		countries.add(new Country("gab", "241", "Gabon"));
+		countries.add(new Country("gmb", "220", "Gambia"));
+		countries.add(new Country("geo", "995", "Georgia"));
+		countries.add(new Country("deu", "49", "Germany"));
+		countries.add(new Country("gha", "233", "Ghana"));
+		countries.add(new Country("gib", "350", "Gibraltar"));
+		countries.add(new Country("grc", "30", "Greece"));
+		countries.add(new Country("grl", "299", "Greenland"));
+		countries.add(new Country("grd", "1", "Grenada"));
+		countries.add(new Country("gtm", "502", "Guatemala"));
+		countries.add(new Country("gin", "224", "Guinea"));
+		countries.add(new Country("gnb", "245", "Guinea-bissau"));
+		countries.add(new Country("guy", "592", "Guyana"));
+		countries.add(new Country("hti", "509", "Haiti"));
+		countries.add(new Country("hnd", "504", "Honduras"));
+		countries.add(new Country("hkg", "852", "Hong Kong"));
+		countries.add(new Country("hun", "36", "Hungary"));
+		countries.add(new Country("ind", "91", "India"));
+		countries.add(new Country("idn", "62", "Indonesia"));
+		countries.add(new Country("irn", "98", "Iran, Islamic Republic Of"));
+		countries.add(new Country("irq", "964", "Iraq"));
+		countries.add(new Country("irl", "353", "Ireland"));
+		countries.add(new Country("imn", "44", "Isle Of Man"));
+		countries.add(new Country("isr", "972", "Israel"));
+		countries.add(new Country("ita", "39", "Italy"));
+		countries.add(new Country("civ", "225", "Côte D'ivoire"));
+		countries.add(new Country("jam", "1", "Jamaica"));
+		countries.add(new Country("jpn", "81", "Japan"));
+		countries.add(new Country("jor", "962", "Jordan"));
+		countries.add(new Country("kaz", "7", "Kazakhstan"));
+		countries.add(new Country("ken", "254", "Kenya"));
+		countries.add(new Country("kir", "686", "Kiribati"));
+		countries.add(new Country("kwt", "965", "Kuwait"));
+		countries.add(new Country("kgz", "996", "Kyrgyzstan"));
+		countries.add(new Country("lao", "856", "Lao People's Democratic Republic"));
+		countries.add(new Country("lva", "371", "Latvia"));
+		countries.add(new Country("lbn", "961", "Lebanon"));
+		countries.add(new Country("lso", "266", "Lesotho"));
+		countries.add(new Country("lbr", "231", "Liberia"));
+		countries.add(new Country("lby", "218", "Libya"));
+		countries.add(new Country("lie", "423", "Liechtenstein"));
+		countries.add(new Country("ltu", "370", "Lithuania"));
+		countries.add(new Country("lux", "352", "Luxembourg"));
+		countries.add(new Country("mac", "853", "Macao"));
+		countries.add(new Country("mkd", "389", "Macedonia, The Former Yugoslav Republic Of"));
+		countries.add(new Country("mdg", "261", "Madagascar"));
+		countries.add(new Country("mwi", "265", "Malawi"));
+		countries.add(new Country("mys", "60", "Malaysia"));
+		countries.add(new Country("mdv", "960", "Maldives"));
+		countries.add(new Country("mli", "223", "Mali"));
+		countries.add(new Country("mlt", "356", "Malta"));
+		countries.add(new Country("mhl", "692", "Marshall Islands"));
+		countries.add(new Country("mrt", "222", "Mauritania"));
+		countries.add(new Country("mus", "230", "Mauritius"));
+		countries.add(new Country("myt", "262", "Mayotte"));
+		countries.add(new Country("mex", "52", "Mexico"));
+		countries.add(new Country("fsm", "691", "Micronesia, Federated States Of"));
+		countries.add(new Country("mda", "373", "Moldova, Republic Of"));
+		countries.add(new Country("mco", "377", "Monaco"));
+		countries.add(new Country("mng", "976", "Mongolia"));
+		countries.add(new Country("msr", "1", "Montserrat"));
+		countries.add(new Country("mne", "382", "Montenegro"));
+		countries.add(new Country("mar", "212", "Morocco"));
+		countries.add(new Country("moz", "258", "Mozambique"));
+		countries.add(new Country("nam", "264", "Namibia"));
+		countries.add(new Country("nru", "674", "Nauru"));
+		countries.add(new Country("npl", "977", "Nepal"));
+		countries.add(new Country("nld", "31", "Netherlands"));
+		countries.add(new Country("ncl", "687", "New Caledonia"));
+		countries.add(new Country("nzl", "64", "New Zealand"));
+		countries.add(new Country("nic", "505", "Nicaragua"));
+		countries.add(new Country("ner", "227", "Niger"));
+		countries.add(new Country("nga", "234", "Nigeria"));
+		countries.add(new Country("niu", "683", "Niue"));
+		countries.add(new Country("prk", "850", "North Korea"));
+		countries.add(new Country("nor", "47", "Norway"));
+		countries.add(new Country("omn", "968", "Oman"));
+		countries.add(new Country("pak", "92", "Pakistan"));
+		countries.add(new Country("plw", "680", "Palau"));
+		countries.add(new Country("pan", "507", "Panama"));
+		countries.add(new Country("png", "675", "Papua New Guinea"));
+		countries.add(new Country("pry", "595", "Paraguay"));
+		countries.add(new Country("per", "51", "Peru"));
+		countries.add(new Country("phl", "63", "Philippines"));
+		countries.add(new Country("pcn", "870", "Pitcairn"));
+		countries.add(new Country("pol", "48", "Poland"));
+		countries.add(new Country("prt", "351", "Portugal"));
+		countries.add(new Country("pri", "1", "Puerto Rico"));
+		countries.add(new Country("qat", "974", "Qatar"));
+		countries.add(new Country("rou", "40", "Romania"));
+		countries.add(new Country("rus", "7", "Russian Federation"));
+		countries.add(new Country("rwa", "250", "Rwanda"));
+		countries.add(new Country("blm", "590", "Saint Barthélemy"));
+		countries.add(new Country("kna", "1", "Saint Kitts and Nevis"));
+		countries.add(new Country("lca", "1", "Saint Lucia"));
+		countries.add(new Country("vct", "1", "Saint Vincent & The Grenadines"));
+		countries.add(new Country("wsm", "685", "Samoa"));
+		countries.add(new Country("smr", "378", "San Marino"));
+		countries.add(new Country("stp", "239", "Sao Tome And Principe"));
+		countries.add(new Country("sau", "966", "Saudi Arabia"));
+		countries.add(new Country("sen", "221", "Senegal"));
+		countries.add(new Country("srb", "381", "Serbia"));
+		countries.add(new Country("syc", "248", "Seychelles"));
+		countries.add(new Country("sle", "232", "Sierra Leone"));
+		countries.add(new Country("sgp", "65", "Singapore"));
+		countries.add(new Country("sxm", "1", "Sint Maarten"));
+		countries.add(new Country("svk", "421", "Slovakia"));
+		countries.add(new Country("svn", "386", "Slovenia"));
+		countries.add(new Country("slb", "677", "Solomon Islands"));
+		countries.add(new Country("som", "252", "Somalia"));
+		countries.add(new Country("zaf", "27", "South Africa"));
+		countries.add(new Country("kor", "82", "South Korea"));
+		countries.add(new Country("esp", "34", "Spain"));
+		countries.add(new Country("lka", "94", "Sri Lanka"));
+		countries.add(new Country("shn", "290", "Saint Helena, Ascension And Tristan Da Cunha"));
+		countries.add(new Country("spm", "508", "Saint Pierre And Miquelon"));
+		countries.add(new Country("sdn", "249", "Sudan"));
+		countries.add(new Country("sur", "597", "Suriname"));
+		countries.add(new Country("swz", "268", "Swaziland"));
+		countries.add(new Country("swe", "46", "Sweden"));
+		countries.add(new Country("che", "41", "Switzerland"));
+		countries.add(new Country("syr", "963", "Syrian Arab Republic"));
+		countries.add(new Country("twn", "886", "Taiwan, Province Of China"));
+		countries.add(new Country("tjk", "992", "Tajikistan"));
+		countries.add(new Country("tza", "255", "Tanzania, United Republic Of"));
+		countries.add(new Country("tha", "66", "Thailand"));
+		countries.add(new Country("tgo", "228", "Togo"));
+		countries.add(new Country("tkl", "690", "Tokelau"));
+		countries.add(new Country("ton", "676", "Tonga"));
+		countries.add(new Country("tto", "1", "Trinidad & Tobago"));
+		countries.add(new Country("tun", "216", "Tunisia"));
+		countries.add(new Country("tur", "90", "Turkey"));
+		countries.add(new Country("tkm", "993", "Turkmenistan"));
+		countries.add(new Country("tca", "1", "Turks and Caicos Islands"));
+		countries.add(new Country("tuv", "688", "Tuvalu"));
+		countries.add(new Country("are", "971", "United Arab Emirates"));
+		countries.add(new Country("uga", "256", "Uganda"));
+		countries.add(new Country("gbr", "44", "United Kingdom"));
+		countries.add(new Country("ukr", "380", "Ukraine"));
+		countries.add(new Country("ury", "598", "Uruguay"));
+		countries.add(new Country("usa", "1", "United States"));
+		countries.add(new Country("vir", "1", "US Virgin Islands"));
+		countries.add(new Country("uzb", "998", "Uzbekistan"));
+		countries.add(new Country("vut", "678", "Vanuatu"));
+		countries.add(new Country("vat", "39", "Holy See (vatican City State)"));
+		countries.add(new Country("ven", "58", "Venezuela, Bolivarian Republic Of"));
+		countries.add(new Country("vnm", "84", "Viet Nam"));
+		countries.add(new Country("wlf", "681", "Wallis And Futuna"));
+		countries.add(new Country("yem", "967", "Yemen"));
+		countries.add(new Country("zmb", "260", "Zambia"));
+		countries.add(new Country("zwe", "263", "Zimbabwe"));
+		return countries;
+	}
 
     public static List<Country> getLibraryMasterCountriesHindi() {
         List<Country> countries = new ArrayList<>();
@@ -1780,8 +2702,8 @@ class Country {
         return countries;
     }
 
-    public static List<Country> getLibraryMasterCountriesSpanish() {
-        List<Country> countries = new ArrayList<>();
+	public static List<Country> getLibraryMasterCountriesSpanish() {
+		List<Country> countries = new ArrayList<>();
 		countries.add(new Country("afg", "93", "Afganistán"));
 		countries.add(new Country("alb", "355", "Albania"));
 		countries.add(new Country("dza", "213", "Argelia"));
@@ -1823,7 +2745,7 @@ class Country {
 		countries.add(new Country("col", "57", "Colombia"));
 		countries.add(new Country("com", "269", "Comoras"));
 		countries.add(new Country("cog", "242", "Congo"));
-		countries.add(new Country("cog", "243", "Congo, La República Democrática Del"));
+		countries.add(new Country("cod", "243", "Congo, La República Democrática Del"));
 		countries.add(new Country("cok", "682", "Islas Cook"));
 		countries.add(new Country("cri", "506", "Costa Rica"));
 		countries.add(new Country("hrv", "385", "Croacia"));
@@ -1961,7 +2883,7 @@ class Country {
 		countries.add(new Country("swe", "46", "Suecia"));
 		countries.add(new Country("che", "41", "Suiza"));
 		countries.add(new Country("syr", "963", "República Árabe Siria"));
-		countries.add(new Country("chn", "886", "Taiwan, provincia de China"));
+		countries.add(new Country("twn", "886", "Taiwan, provincia de China"));
 		countries.add(new Country("tjk", "992", "Tayikistán"));
 		countries.add(new Country("tza", "255", "Tanzania, República Unida de"));
 		countries.add(new Country("tha", "66", "Tailandia"));
@@ -1987,8 +2909,8 @@ class Country {
 		countries.add(new Country("yem", "967", "Yemen"));
 		countries.add(new Country("zmb", "260", "Zambia"));
 		countries.add(new Country("zwe", "263", "Zimbabue"));
-        return countries;
-    }
+		return countries;
+	}
 
     public static List<Country> getLibraryMasterCountriesChinese() {
         List<Country> countries = new ArrayList<>();
