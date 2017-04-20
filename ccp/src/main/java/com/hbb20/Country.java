@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by hbb20 on 11/1/16.
  */
-class Country {
+public class Country {
     static String TAG = "Class Country";
     String nameCode;
     String phoneCode;
@@ -219,7 +219,7 @@ class Country {
 	 * @param threeLetterCode
 	 * @return
 	 */
-	static String getTwoLetterCode(String threeLetterCode) {
+	public static String getTwoLetterCode(String threeLetterCode) {
 		switch (threeLetterCode) {
 			case "ita":
 				return "it";
@@ -680,7 +680,7 @@ class Country {
 	 * @param twoLetterCode
 	 * @return
 	 */
-	static String getThreeLetterCode(String twoLetterCode) {
+	public static String getThreeLetterCode(String twoLetterCode) {
 		switch (twoLetterCode) {
 			case "kr":
 				return "kor";
