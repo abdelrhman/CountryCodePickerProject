@@ -1413,7 +1413,7 @@ public class Country {
 				return R.drawable.flag_nigeria;
 			case "niu": //niue
 				return R.drawable.flag_niue;
-			case "kp": //north korea
+			case "prk": //north korea
 				return R.drawable.flag_north_korea;
 			case "nor": //norway
 				return R.drawable.flag_norway;
