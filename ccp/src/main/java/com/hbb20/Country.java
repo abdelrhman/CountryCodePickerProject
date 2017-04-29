@@ -2909,6 +2909,25 @@ public class Country {
 		countries.add(new Country("yem", "967", "Yemen"));
 		countries.add(new Country("zmb", "260", "Zambia"));
 		countries.add(new Country("zwe", "263", "Zimbabue"));
+		countries.add(new Country("aia", "1", "Anguila"));
+		countries.add(new Country("atg", "1", "Antigua y Barbuda"));
+		countries.add(new Country("bhs", "1", "Bahamas"));
+		countries.add(new Country("brb", "1", "Barbados"));
+		countries.add(new Country("bmu", "1", "Bermudas"));
+		countries.add(new Country("vgb", "1", "Islas Vírgenes Británicas"));
+		countries.add(new Country("cym", "1", "Islas Caimán"));
+		countries.add(new Country("dma", "1", "Dominica"));
+		countries.add(new Country("dom", "1", "República Dominicana"));
+		countries.add(new Country("grd", "1", "Granada"));
+		countries.add(new Country("jam", "1", "Jamaica"));
+		countries.add(new Country("msr", "1", "Montserrat"));
+		countries.add(new Country("kna", "1", "San Cristóbal y Nieves"));
+		countries.add(new Country("lca", "1", "Santa Lucía"));
+		countries.add(new Country("vct", "1", "San Vicente y las Granadinas"));
+		countries.add(new Country("sxm", "1", "Sint Maarten"));
+		countries.add(new Country("tto", "1", "Trinidad y Tobago"));
+		countries.add(new Country("tca", "1", "Islas Turcas y Caicos"));
+		countries.add(new Country("vir", "1", "Islas Vírgenes de US"));
 		return countries;
 	}
 
