@@ -1589,6 +1589,10 @@ public class Country {
 				return R.drawable.flag_turks_and_caicos_islands;
 			case "vir": //us virgin islands
 				return R.drawable.flag_us_virgin_islands;
+			case "cym":
+				return R.drawable.flag_cayman_islands;
+			case "sxm":
+				return R.drawable.flag_sint_maarten;
 			default:
 				return R.drawable.flag_transparent;
 		}
